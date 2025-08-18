@@ -1,0 +1,26 @@
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Ambiente virtual
+.venv/
+env/
+venv/
+ENV/
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Build e pacotes
+dist/
+build/
+*.egg-info/
