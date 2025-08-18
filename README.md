@@ -1,13 +1,18 @@
-# ViaCEP CLI
+# 📦 Via CEP CLI
 
-Um sistema simples em Python que busca endereços pelo CEP usando a API pública ViaCEP.
+Um **CLI em Python** que consulta endereços através do serviço **ViaCEP**.
 
-## Requisitos
-- Python 3.10+
-- Poetry instalado
+---
 
-## Como rodar
+## 🚀 Funcionalidades
+- Consulta de endereço a partir de um CEP.
+- Retorno formatado diretamente no terminal.
+
+---
+
+## 🛠️ Configuração do Ambiente
+
+### 1. Clonar o repositório
 ```bash
-poetry install
-poetry run python via_cep_cli/main.py
-```
+git clone https://github.com/mathfss/via-cep-cli.git
+cd via-cep-cli
