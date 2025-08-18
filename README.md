@@ -80,4 +80,3 @@ poetry build
 
 Isso vai gerar os arquivos na pasta `dist/`.
 
-*passo a passo prático dos comandos Git para cada etapa** (branch, PR, conflito, stash, revert, rebase) para você só seguir como se fosse um roteiro?
