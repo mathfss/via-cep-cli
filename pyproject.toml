@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "via-cep-cli"
+version = "0.1.0"
+description = "Consulta de endereço usando ViaCEP API"
+authors = ["Seu Nome <seu.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+via-cep-cli = "via_cep_cli.main:buscar_cep"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
