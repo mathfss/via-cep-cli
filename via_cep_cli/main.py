@@ -9,7 +9,7 @@ def buscar_cep(cep: str, salvar: bool = False):
             print("CEP não encontrado.")
         else:
             endereco = f"{data['logradouro']}, {data['bairro']}, {data['localidade']}-{data['uf']}"
-            print(f"Endereço encontrado: {endereco}")
+            print(f"Endereço achado: {endereco}")
 
             if salvar:
                 with open("enderecos.txt", "a", encoding="utf-8") as f:
