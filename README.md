@@ -80,3 +80,48 @@ poetry build
 
 Isso vai gerar os arquivos na pasta `dist/`.
 
+
+---
+
+## 🧪 Testes Unitários
+
+O projeto conta com uma suíte de testes unitários implementada com **pytest**, cobrindo cenários **positivos** e **negativos** da aplicação.
+
+### ▶️ Executando os testes
+
+1. Certifique-se de ter instalado as dependências do projeto:
+
+   ```bash
+   poetry install
+   ```
+
+2. Execute os testes com o comando:
+
+   ```bash
+   poetry run pytest -v
+   ```
+
+3. Exemplo de saída esperada (todos os testes passando):
+
+   ```
+   ================================================= test session starts =================================================
+   platform win32 -- Python 3.13
+   collected 20 items
+
+   via_cep_cli/tests/test_main.py::test_buscar_cep_valido PASSED
+   via_cep_cli/tests/test_main.py::test_buscar_cep_valido_sem_logradouro PASSED
+   ...
+   via_cep_cli/tests/test_main.py::test_buscar_cep_sem_logradouro_negativo PASSED
+
+   =============================================== 20 passed in 2.10s ====================================================
+   ```
+
+### 📝 Estrutura de testes
+
+* **10 testes positivos** → validam o funcionamento esperado (CEPs válidos, salvamento em arquivo, formatação correta, etc).
+* **10 testes negativos** → validam situações de erro (CEP inválido, CEP inexistente, API fora do ar, timeout, JSON inválido, etc).
+
+Esses testes garantem que o código continue funcionando mesmo após alterações futuras, evitando regressões.
+
+---
+
