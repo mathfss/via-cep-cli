@@ -125,3 +125,16 @@ Esses testes garantem que o código continue funcionando mesmo após alteraçõe
 
 ---
 
+### 🐞 Simulação de Regressão
+Um colega removeu parte do código, e ao rodar os testes a falha foi identificada:
+
+<img width="1867" height="294" alt="image" src="https://github.com/user-attachments/assets/4470974e-d745-4b0f-8397-8ca53021cf28" />
+
+Após corrigir a regressão do código os testes passaram normalmente:
+
+<img width="1867" height="429" alt="image" src="https://github.com/user-attachments/assets/3edaf8f1-2b73-4a92-a6b8-87c7b80a6f28" />
+
+
+
+
+
