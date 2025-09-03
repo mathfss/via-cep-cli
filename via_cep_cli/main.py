@@ -28,7 +28,7 @@ def buscar_cep(cep: str, salvar: bool = False, retornar_dict: bool = False):
         print("CEP inválido. Informe exatamente 8 números.")
         return None
 
-    
+    url = f"https://viacep.com.br/ws/{cep}/json/"
     try:
         response = requests.get(url, timeout=5)
         if response.status_code == 200:
